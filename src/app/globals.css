@@ -14,4 +14,8 @@
   .btn-text {
     @apply text-black bg-transparent;
   }
+
+  .logo-ticker-image {
+    @apply h-8 w-auto;
+  }
 }
