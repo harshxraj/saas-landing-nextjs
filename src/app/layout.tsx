@@ -6,8 +6,8 @@ import { twMerge } from "tailwind-merge";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "Saas Landing Page",
+  description: "SaaS Landing Page with React, Next.js, TailwindCSS & Framer Motion",
 };
 
 export default function RootLayout({
