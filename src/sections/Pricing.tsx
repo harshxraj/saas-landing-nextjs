@@ -69,6 +69,7 @@ export const Pricing = () => {
         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
           {pricingTiers.map(({ title, monthlyPrice, buttonText, popular, features, inverse }) => (
             <div
+              key={title}
               className={twMerge(
                 "p-10 rounded-3xl border border-[#F1F1F1] shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full",
                 inverse === true && "border-black bg-black text-white"
@@ -108,7 +109,7 @@ export const Pricing = () => {
               </button>
               <ul className="flex flex-col gap-5 mt-8">
                 {features.map((feature) => (
-                  <li key={feature} className="text-sm flex items-center gap-4" key={feature}>
+                  <li key={feature} className="text-sm flex items-center gap-4">
                     <CheckIcon className="h-6 w-6" />
                     <span>{feature}</span>
                   </li>
